@@ -1,0 +1,21 @@
+batch_size: 32
+n_samples: 10
+n_samples_testing: 10
+n_features:
+out_features: 2
+dataset_name: 
+timestamp:
+classification: False 
+var_noise: 0.000001
+learning_rate: 0.001
+
+# Parameters of Horseshoe layer
+horseshoe_scale: 
+weight_cauchy_scale: 1.
+global_cauchy_scale: 1.
+beta_rho_scale: -5.
+log_tau_mean: 
+log_tau_rho_scale: -5.
+bias_rho_scale: -5.
+log_v_mean: 
+log_v_rho_scale: -5.

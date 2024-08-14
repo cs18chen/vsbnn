@@ -1,0 +1,30 @@
+mixing_coefficient: 1.
+sigma1: 1.
+sigma2: 2. # This won't be used since mixing coefficient is 1
+n_samples: 10
+n_samples_testing: 10
+batch_size: 512
+n_hidden_units: 200
+n_features:
+out_features: 1
+dataset_name:
+timestamp:
+classification: True
+var_noise: 0.1
+learning_rate: 0.0001
+
+# Bayesian Layer parameters
+bayesian_weight_rho_scale: -9.
+bayesian_bias_rho_scale: -9.
+bayesian_scale: 1.
+
+# Horseshoe layer parameters
+horseshoe_scale:
+global_cauchy_scale: 1.
+weight_cauchy_scale: 1.
+beta_rho_scale: -9.
+log_tau_mean:
+log_tau_rho_scale: -9.
+bias_rho_scale: -9
+log_v_mean:
+log_v_rho_scale: -9
